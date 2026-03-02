@@ -1,0 +1,158 @@
+
+[
+  {
+    "name": "Cozy Beachfront Cottage",
+    "title": "Cozy Beachfront Cottage",
+    "description": "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "price": 1500,
+    "location": "ONE AND ONE HOTEL",
+    "city": "KERELA, INDIA",
+    "country": "INDIA",
+    "rating": 4.8,
+    "amenities": [
+      "WiFi",
+      "AC"
+    ]
+  },
+  {
+    "name": "Modern Loft in Downtown",
+    "title": "Modern Loft in Downtown",
+    "description": "Stay in the heart of the city in this stylish loft apartment. Perfect for urban explorers!",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+    "price": 1200,
+    "location": "New York City",
+    "city": "New York City, USA",
+    "country": "United States",
+    "rating": 4.7,
+    "amenities": [
+      "WiFi",
+      "AC",
+      "Cafe"
+    ]
+  },
+  {
+    "name": "Mountain Retreat",
+    "title": "Mountain Retreat",
+    "description": "Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+    "price": 1000,
+    "location": "Aspen",
+    "city": "Aspen, USA",
+    "country": "United States",
+    "rating": 4.9,
+    "amenities": [
+      "WiFi",
+      "Bonfire Area"
+    ]
+  },
+  {
+    "name": "Historic Villa in Tuscany",
+    "title": "Historic Villa in Tuscany",
+    "description": "Experience the charm of Tuscany in this beautifully restored villa. Explore the rolling hills and vineyards.",
+    "image": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=1200&q=80",
+    "price": 2500,
+    "location": "Florence",
+    "city": "Florence, Italy",
+    "country": "Italy",
+    "rating": 4.9,
+    "amenities": [
+      "WiFi",
+      "AC",
+      "Pool"
+    ]
+  },
+  {
+    "name": "Luxury Penthouse Suite",
+    "title": "Luxury Penthouse Suite",
+    "description": "Indulge in luxury with this penthouse suite featuring breathtaking city views, modern amenities, and private terrace.",
+    "image": "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&fit=crop&w=1200&q=80",
+    "price": 5000,
+    "location": "Dubai",
+    "city": "Dubai, UAE",
+    "country": "UAE",
+    "rating": 5.0,
+    "amenities": [
+      "WiFi",
+      "AC",
+      "Pool",
+      "Cafe"
+    ]
+  },
+  {
+    "name": "Rustic Countryside Barn",
+    "title": "Rustic Countryside Barn",
+    "description": "Stay in a converted barn with rustic charm and modern comfort. Ideal for a quiet countryside retreat.",
+    "image": "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1200&q=80",
+    "price": 900,
+    "location": "Cotswolds",
+    "city": "Cotswolds, UK",
+    "country": "United Kingdom",
+    "rating": 4.6,
+    "amenities": [
+      "WiFi",
+      "Bonfire Area"
+    ]
+  },
+  {
+    "name": "Tropical Jungle Bungalow",
+    "title": "Tropical Jungle Bungalow",
+    "description": "Immerse yourself in nature with this jungle bungalow surrounded by tropical greenery and wildlife.",
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+    "price": 1100,
+    "location": "Bali",
+    "city": "JAIPUR, INDIA",
+    "country": "INDIA",
+    "rating": 4.8,
+    "amenities": [
+      "WiFi",
+      "AC"
+    ]
+  },
+  {
+    "name": "Ski Chalet Escape",
+    "title": "Ski Chalet Escape",
+    "description": "Hit the slopes and relax in this cozy ski chalet with a fireplace and stunning mountain views.",
+    "image": "/images/goa.jpg",
+    "price": 2200,
+    "location": "BAGHA-BEACH",
+    "city": "BAGHA-BEACH, GOA India",
+    "country": "India",
+    "rating": 4.9,
+    "amenities": [
+      "WiFi",
+      "Bonfire Area",
+      "Cafe"
+    ]
+  },
+  {
+    "name": "Desert Dome Stay",
+    "title": "Desert Dome Stay",
+    "description": "Stay under the stars in this unique desert dome. Perfect for stargazing and a serene desert experience.",
+    "image": "/images/goa.jpg",
+    "price": 1300,
+    "location": "Joshua Tree",
+    "city": "GOA",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": [
+      "WiFi",
+      "AC"
+    ]
+  },
+  {
+    "name": "Secluded Island Hut",
+    "title": "Secluded Island Hut",
+    "description": "An off-grid hut on a private island. Disconnect and experience true serenity.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "price": 3000,
+    "location": "Phuket",
+    "city": "Phuket, Thailand",
+    "country": "Thailand",
+    "rating": 4.8,
+    "amenities": [
+      "AC",
+      "Pool"
+    ]
+  }
+]
