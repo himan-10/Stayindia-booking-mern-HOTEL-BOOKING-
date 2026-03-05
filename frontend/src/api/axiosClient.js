@@ -4,8 +4,8 @@ const axiosClient = axios.create({
     baseURL: import.meta.env.VITE_API_URL || 'https://stayindia-booking-mern-hotel-booking-5.onrender.com/api',
     headers: {
         'Content-Type': 'application/json',
-    },
-    withCredentials:true
+    }
+    // withCredentials: true
 });
 
 // Request interceptor for API calls
