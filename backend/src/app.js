@@ -16,8 +16,8 @@ app.use(helmet());
 
 // Enable CORS
 app.use(cors({
-origin :"https://stayindiahp.netlify.app/",
-    credentials:true;
+    origin: ["https://stayindiahp.netlify.app", "http://localhost:5173", "http://localhost:3000"],
+    credentials: true
 }));
 
 // Rate Limiting
