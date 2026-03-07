@@ -1,4 +1,4 @@
-# LuxRentals - Residential Apartment Rental Portal
+# stayIndia - Residential Apartment Rental Portal
 
 This is a production-level MERN stack application designed for managing and renting luxury apartments. It features JWT authentication, role-based access control, a secure backend, and a highly responsive frontend built with Vite and Tailwind CSS.
 

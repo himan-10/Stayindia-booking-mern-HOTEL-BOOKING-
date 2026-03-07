@@ -15,7 +15,10 @@ app.use(express.json());
 app.use(helmet());
 
 // Enable CORS
-app.use(cors());
+app.use(cors({
+origin :"https://stayindiahp.netlify.app/",
+    credentials:true;
+}));
 
 // Rate Limiting
 const limiter = rateLimit({
