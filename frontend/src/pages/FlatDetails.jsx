@@ -135,23 +135,23 @@ const FlatDetails = () => {
                 {/* Luxury Image Gallery Grid */}
                 <div className="grid grid-cols-4 grid-rows-2 gap-3 h-[50vh] min-h-[400px] max-h-[600px] rounded-2xl overflow-hidden cursor-pointer mb-12 border border-white/10">
                     <div className="col-span-4 md:col-span-2 row-span-2 relative group">
-                        <img src={gallery[0]} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Main property view" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1542314831-c6a4d14d8c85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'; }} />
+                        <img src={gallery[0] || "/goa.jpg"} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Main property view" onError={(e) => { e.target.onerror = null; e.target.src = '/goa.jpg'; }} />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-300"></div>
                     </div>
                     <div className="hidden md:block col-span-1 row-span-1 relative group overflow-hidden">
-                        <img src={gallery[1]} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Property detail 1" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1542314831-c6a4d14d8c85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'; }} />
+                        <img src={gallery[1]} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Property detail 1" onError={(e) => { e.target.onerror = null; e.target.src = '/rishikesh1.jpg'; }} />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-300"></div>
                     </div>
                     <div className="hidden md:block col-span-1 row-span-1 relative group overflow-hidden">
-                        <img src={gallery[2]} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Property detail 2" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1542314831-c6a4d14d8c85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'; }} />
+                        <img src={gallery[2]} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Property detail 2" onError={(e) => { e.target.onerror = null; e.target.src = '/rishikesh2.jpg'; }} />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-300"></div>
                     </div>
                     <div className="hidden md:block col-span-1 row-span-1 relative group overflow-hidden">
-                        <img src={gallery[3]} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Property detail 3" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1542314831-c6a4d14d8c85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'; }} />
+                        <img src={gallery[3]} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Property detail 3" onError={(e) => { e.target.onerror = null; e.target.src = '/hotel1.jpg'; }} />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-300"></div>
                     </div>
                     <div className="hidden md:block col-span-1 row-span-1 relative group overflow-hidden">
-                        <img src={gallery[4]} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Property detail 4" onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1542314831-c6a4d14d8c85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'; }} />
+                        <img src={gallery[4]} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Property detail 4" onError={(e) => { e.target.onerror = null; e.target.src = '/rishikesh2.jpg'; }} />
                         <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition duration-300 flex items-center justify-center">
                             <span className="text-white font-medium border border-white/30 backdrop-blur-md px-4 py-2 rounded-lg bg-black/30">View all photos</span>
                         </div>
@@ -236,7 +236,7 @@ const FlatDetails = () => {
                         <div className="bg-[#15100B] border border-white/10 rounded-2xl p-6 shadow-2xl sticky top-28">
                             <div className="flex items-end justify-between mb-6">
                                 <div className="flex items-baseline gap-1">
-                                    <span className="text-3xl font-bold text-white">${pricePerNight.toLocaleString()}</span>
+                                    <span className="text-3xl font-bold text-white">₹{pricePerNight.toLocaleString()}</span>
                                     <span className="text-gray-400 text-sm font-medium">/ night</span>
                                 </div>
                                 <span className="text-sm font-medium text-gray-400 hover:text-white transition cursor-pointer underline underline-offset-4 decoration-white/20">
@@ -295,21 +295,21 @@ const FlatDetails = () => {
                                     className="mt-6 flex flex-col gap-3 text-gray-300 border-t border-white/10 pt-6"
                                 >
                                     <div className="flex justify-between">
-                                        <span className="underline decoration-white/20 underline-offset-4">${pricePerNight.toLocaleString()} x {nightCount} night{nightCount > 1 ? 's' : ''}</span>
+                                        <span className="underline decoration-white/20 underline-offset-4">₹{pricePerNight.toLocaleString()} x {nightCount} night{nightCount > 1 ? 's' : ''}</span>
                                         <span>${baseTotal.toLocaleString()}</span>
                                     </div>
                                     <div className="flex justify-between">
                                         <span className="underline decoration-white/20 underline-offset-4">Cleaning fee</span>
-                                        <span>${cleaningFee.toLocaleString()}</span>
+                                        <span>₹{cleaningFee.toLocaleString()}</span>
                                     </div>
                                     <div className="flex justify-between">
                                         <span className="underline decoration-white/20 underline-offset-4">StayIndia service fee</span>
-                                        <span>${serviceFee.toLocaleString()}</span>
+                                        <span>₹{serviceFee.toLocaleString()}</span>
                                     </div>
                                     <div className="my-2 border-t border-white/10" />
                                     <div className="flex justify-between font-bold text-xl text-white">
                                         <span>Total</span>
-                                        <span className="text-[#EF6C00]">${finalTotal.toLocaleString()}</span>
+                                        <span className="text-[#EF6C00]">₹{finalTotal.toLocaleString()}</span>
                                     </div>
                                 </motion.div>
                             )}

@@ -127,7 +127,7 @@ const Home = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         <motion.div whileHover={{ scale: 1.03 }} className="relative h-[400px] rounded-xl overflow-hidden group cursor-pointer">
-                            <img src="/images/jaipur.jpg" alt="Jaipur" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                            <img src="/jaipur.jpg" alt="Jaipur" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div className="absolute bottom-6 left-6">
                                 <h3 className="text-2xl font-bold text-white mb-1">Jaipur</h3>
@@ -136,7 +136,7 @@ const Home = () => {
                         </motion.div>
 
                         <motion.div whileHover={{ scale: 1.03 }} className="relative h-[400px] rounded-xl overflow-hidden group cursor-pointer">
-                            <img src="/images/goa.jpg" alt="Goa" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                            <img src="/goa.jpg" alt="Goa" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div className="absolute bottom-6 left-6">
                                 <h3 className="text-2xl font-bold text-white mb-1">Goa</h3>
@@ -145,7 +145,7 @@ const Home = () => {
                         </motion.div>
 
                         <motion.div whileHover={{ scale: 1.03 }} className="relative h-[400px] rounded-xl overflow-hidden group cursor-pointer">
-                            <img src="/images/kerala.jpg" alt="Kerala" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                            <img src="/kerala.jpg" alt="Kerala" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div className="absolute bottom-6 left-6">
                                 <h3 className="text-2xl font-bold text-white mb-1">Kerala</h3>
@@ -154,7 +154,7 @@ const Home = () => {
                         </motion.div>
 
                         <motion.div whileHover={{ scale: 1.03 }} className="relative h-[400px] rounded-xl overflow-hidden group cursor-pointer">
-                            <img src="/images/udaipur.jpg" alt="Udaipur" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                            <img src="/udaipur.jpg" alt="Udaipur" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div className="absolute bottom-6 left-6">
                                 <h3 className="text-2xl font-bold text-white mb-1">Udaipur</h3>

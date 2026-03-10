@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+
 /* eslint-disable-next-line no-unused-vars */
 import { motion } from 'framer-motion';
 
@@ -9,13 +10,13 @@ import hostelData from '../data/hostels.json';
 
 const OurHotels = () => {
     const locations = [
-        { name: 'Rajasthan', count: 120, img: 'https://images.unsplash.com/photo-1599661559684-297bc01b44d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-        { name: 'Kerala', count: 85, img: 'https://images.unsplash.com/photo-1599661559684-297bc01b44d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-        { name: 'Goa', count: 210, img: 'https://images.unsplash.com/photo-1599661559684-297bc01b44d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-        { name: 'Himachal', count: 95, img: 'https://images.unsplash.com/photo-1599661559684-297bc01b44d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-        { name: 'Maharashtra', count: 150, img: 'https://images.unsplash.com/photo-1599661559684-297bc01b44d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-        { name: 'Uttarakhand', count: 70, img: 'https://images.unsplash.com/photo-1599661559684-297bc01b44d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
-    ];
+        { name: 'Rajasthan', count: 120, img :'/Rajasthan.jpg' },
+        { name: 'Kerala', count: 85, img: '/kerala_OH.jpg' },
+        { name: 'Goa', count: 210, img:'/Goa_OH.jpg'  },
+        { name: 'Himachal', count: 95, img:'/Himachal.jpg'  },
+        { name: 'Maharashtra', count: 150, img:'/mumbai-maharashtra.jpg'  },
+        { name: 'Uttarakhand', count: 70, img: '/Uthrakhand_HO.jpg' }
+     ];
 
     // Get a sample of featured properties from the JSON
     const featuredProperties = hostelData ? hostelData.slice(0, 12) : [];
@@ -68,7 +69,7 @@ const OurHotels = () => {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
                             {featuredProperties.map((property, idx) => (
                                 <motion.div
                                     key={`${property.name}-${idx}`}
@@ -77,17 +78,17 @@ const OurHotels = () => {
                                     transition={{ delay: idx * 0.05 }}
                                     className="bg-[#1a1614] border border-white/5 rounded-2xl overflow-hidden hover:border-[#EF6C00]/30 transition group cursor-pointer"
                                 >
-                                    <div className="h-48 overflow-hidden relative">
+                                    <div className="h-64 overflow-hidden relative">
                                         <img
                                             src={property.image}
                                             alt={property.name}
-                                            className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                            className="w-full  h-full object-cover group-hover:scale-105 transition duration-500"
                                         />
                                         <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-lg flex items-center gap-1 text-sm font-bold shadow-lg">
                                             <span className="text-[#EF6C00]">★</span> {property.rating}
                                         </div>
                                     </div>
-                                    <div className="p-5 flex flex-col h-[200px]">
+                                    <div className="p-5 flex flex-col h-[215px]">
                                         <div className="flex justify-between items-start mb-2">
                                             <h3 className="text-lg font-bold text-white line-clamp-1 flex-1 pr-2">{property.name}</h3>
                                         </div>

@@ -120,7 +120,7 @@ const Flats = () => {
                             <div className="mb-8">
                                 <div className="flex justify-between items-center mb-4">
                                     <h4 className="text-white text-sm font-medium">Max per night</h4>
-                                    <span className="text-[#EF6C00] font-bold text-sm">${priceRange.toLocaleString()}</span>
+                                    <span className="text-[#EF6C00] font-bold text-sm">₹{priceRange.toLocaleString()}</span>
                                 </div>
                                 <div className="relative pt-1">
                                     <input
@@ -132,8 +132,8 @@ const Flats = () => {
                                     />
                                 </div>
                                 <div className="flex justify-between text-xs text-gray-500 font-medium mt-2">
-                                    <span>$500</span>
-                                    <span>$5,000+</span>
+                                    <span>₹500</span>
+                                    <span>₹5,000+</span>
                                 </div>
                             </div>
 

@@ -1,158 +1,451 @@
-
 [
   {
-    "name": "Cozy Beachfront Cottage",
-    "title": "Cozy Beachfront Cottage",
-    "description": "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-    "price": 1500,
-    "location": "ONE AND ONE HOTEL",
-    "city": "KERELA, INDIA",
-    "country": "INDIA",
+    "name": "Goa Beach Paradise",
+    "title": "Goa Beach Paradise",
+    "description": "Relax in a beachfront resort near Baga Beach with amazing sunset views.",
+    "image": "/goa1.jpg",
+    "price": 2100,
+    "location": "Baga Beach",
+    "city": "Goa",
+    "country": "India",
     "rating": 4.8,
-    "amenities": [
-      "WiFi",
-      "AC"
-    ]
+    "amenities": ["WiFi","Pool","Cafe"]
   },
   {
-    "name": "Modern Loft in Downtown",
-    "title": "Modern Loft in Downtown",
-    "description": "Stay in the heart of the city in this stylish loft apartment. Perfect for urban explorers!",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
-    "price": 1200,
-    "location": "New York City",
-    "city": "New York City, USA",
-    "country": "United States",
-    "rating": 4.7,
-    "amenities": [
-      "WiFi",
-      "AC",
-      "Cafe"
-    ]
-  },
-  {
-    "name": "Mountain Retreat",
-    "title": "Mountain Retreat",
-    "description": "Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.",
-    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
-    "price": 1000,
-    "location": "Aspen",
-    "city": "Aspen, USA",
-    "country": "United States",
-    "rating": 4.9,
-    "amenities": [
-      "WiFi",
-      "Bonfire Area"
-    ]
-  },
-  {
-    "name": "Historic Villa in Tuscany",
-    "title": "Historic Villa in Tuscany",
-    "description": "Experience the charm of Tuscany in this beautifully restored villa. Explore the rolling hills and vineyards.",
-    "image": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=1200&q=80",
-    "price": 2500,
-    "location": "Florence",
-    "city": "Florence, Italy",
-    "country": "Italy",
-    "rating": 4.9,
-    "amenities": [
-      "WiFi",
-      "AC",
-      "Pool"
-    ]
-  },
-  {
-    "name": "Luxury Penthouse Suite",
-    "title": "Luxury Penthouse Suite",
-    "description": "Indulge in luxury with this penthouse suite featuring breathtaking city views, modern amenities, and private terrace.",
-    "image": "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?auto=format&fit=crop&w=1200&q=80",
-    "price": 5000,
-    "location": "Dubai",
-    "city": "Dubai, UAE",
-    "country": "UAE",
-    "rating": 5.0,
-    "amenities": [
-      "WiFi",
-      "AC",
-      "Pool",
-      "Cafe"
-    ]
-  },
-  {
-    "name": "Rustic Countryside Barn",
-    "title": "Rustic Countryside Barn",
-    "description": "Stay in a converted barn with rustic charm and modern comfort. Ideal for a quiet countryside retreat.",
-    "image": "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1200&q=80",
-    "price": 900,
-    "location": "Cotswolds",
-    "city": "Cotswolds, UK",
-    "country": "United Kingdom",
-    "rating": 4.6,
-    "amenities": [
-      "WiFi",
-      "Bonfire Area"
-    ]
-  },
-  {
-    "name": "Tropical Jungle Bungalow",
-    "title": "Tropical Jungle Bungalow",
-    "description": "Immerse yourself in nature with this jungle bungalow surrounded by tropical greenery and wildlife.",
-    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
-    "price": 1100,
-    "location": "Bali",
-    "city": "JAIPUR, INDIA",
-    "country": "INDIA",
-    "rating": 4.8,
-    "amenities": [
-      "WiFi",
-      "AC"
-    ]
-  },
-  {
-    "name": "Ski Chalet Escape",
-    "title": "Ski Chalet Escape",
-    "description": "Hit the slopes and relax in this cozy ski chalet with a fireplace and stunning mountain views.",
-    "image": "/images/goa.jpg",
+    "name": "Kerala Backwater Resort",
+    "title": "Kerala Backwater Resort",
+    "description": "Beautiful stay surrounded by coconut trees and peaceful backwaters.",
+    "image": "/kerela1jpg.jpg",
     "price": 2200,
-    "location": "BAGHA-BEACH",
-    "city": "BAGHA-BEACH, GOA India",
+    "location": "Alleppey",
+    "city": "Kerala",
     "country": "India",
     "rating": 4.9,
-    "amenities": [
-      "WiFi",
-      "Bonfire Area",
-      "Cafe"
-    ]
+    "amenities": ["WiFi","AC","Pool"]
   },
   {
-    "name": "Desert Dome Stay",
-    "title": "Desert Dome Stay",
-    "description": "Stay under the stars in this unique desert dome. Perfect for stargazing and a serene desert experience.",
-    "image": "/images/goa.jpg",
-    "price": 1300,
-    "location": "Joshua Tree",
-    "city": "GOA",
+    "name": "Udaipur Lake View Palace",
+    "title": "Udaipur Lake View Palace",
+    "description": "Luxury heritage stay with stunning views of Lake Pichola.",
+    "image": "/udaipur1.jpg",
+    "price": 2600,
+    "location": "Lake Pichola",
+    "city": "Udaipur",
+    "country": "India",
+    "rating": 4.9,
+    "amenities": ["WiFi","AC","Pool"]
+  },
+  {
+    "name": "Pink City Royal Haveli",
+    "title": "Pink City Royal Haveli",
+    "description": "Experience Rajasthani culture in this traditional haveli.",
+    "image": "/jaipur1.jpg",
+    "price": 2000,
+    "location": "Hawa Mahal Road",
+    "city": "Jaipur",
     "country": "India",
     "rating": 4.7,
-    "amenities": [
-      "WiFi",
-      "AC"
-    ]
+    "amenities": ["WiFi","AC"]
   },
   {
-    "name": "Secluded Island Hut",
-    "title": "Secluded Island Hut",
-    "description": "An off-grid hut on a private island. Disconnect and experience true serenity.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-    "price": 3000,
-    "location": "Phuket",
-    "city": "Phuket, Thailand",
-    "country": "Thailand",
+    "name": "Bhopal Lake View Hotel",
+    "title": "Bhopal Lake View Hotel",
+    "description": "Comfortable hotel near Upper Lake with scenic views.",
+    "image": "/bhopal1.jpg",
+    "price": 1700,
+    "location": "Upper Lake",
+    "city": "Bhopal",
+    "country": "India",
+    "rating": 4.6,
+    "amenities": ["WiFi","AC","Cafe"]
+  },
+  {
+    "name": "Manali Snow Resort",
+    "title": "Manali Snow Resort",
+    "description": "Mountain resort with breathtaking snow views.",
+    "image": "/manali1.jpg",
+    "price": 2300,
+    "location": "Old Manali",
+    "city": "Manali",
+    "country": "India",
+    "rating": 4.9,
+    "amenities": ["WiFi","Bonfire Area"]
+  },
+  {
+    "name": "Shimla Heritage Hotel",
+    "title": "Shimla Heritage Hotel",
+    "description": "Colonial-style hotel located near Mall Road.",
+    "image": "/shimla1.jpg",
+    "price": 2100,
+    "location": "Mall Road",
+    "city": "Shimla",
+    "country": "India",
     "rating": 4.8,
-    "amenities": [
-      "AC",
-      "Pool"
-    ]
+    "amenities": ["WiFi","AC"]
+  },
+  {
+    "name": "Mumbai Skyline Hotel",
+    "title": "Mumbai Skyline Hotel",
+    "description": "Modern hotel with beautiful skyline views.",
+    "image": "/mumbai1.jpg",
+    "price": 3200,
+    "location": "Marine Drive",
+    "city": "Mumbai",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","AC","Cafe"]
+  },
+  {
+    "name": "Lonavala Hill Resort",
+    "title": "Lonavala Hill Resort",
+    "description": "Peaceful hill resort surrounded by nature.",
+    "image": "/lonavala1.jpg",
+    "price": 2000,
+    "location": "Lonavala Hills",
+    "city": "Lonavala",
+    "country": "India",
+    "rating": 4.6,
+    "amenities": ["WiFi","Pool"]
+  },
+  {
+    "name": "Rishikesh River Retreat",
+    "title": "Rishikesh River Retreat",
+    "description": "Serene stay near the Ganges with mountain views.",
+    "image": "/rishikesh1.jpg",
+    "price": 1900,
+    "location": "Lakshman Jhula",
+    "city": "Rishikesh",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Bonfire Area"]
+  },
+
+  {
+    "name": "Nainital Lake Resort",
+    "title": "Nainital Lake Resort",
+    "description": "Beautiful hotel overlooking Naini Lake.",
+    "image": "/nainital1.jpg",
+    "price": 2100,
+    "location": "Mall Road",
+    "city": "Nainital",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","AC"]
+  },
+  {
+    "name": "Goa Luxury Villa",
+    "title": "Goa Luxury Villa",
+    "description": "Private villa with pool near Calangute Beach.",
+    "image": "/goa2.jpg",
+    "price": 3500,
+    "location": "Calangute",
+    "city": "Goa",
+    "country": "India",
+    "rating": 4.9,
+    "amenities": ["WiFi","Pool","AC"]
+  },
+  {
+    "name": "Kerala Tea Garden Cottage",
+    "title": "Kerala Tea Garden Cottage",
+    "description": "Stay among beautiful tea gardens in Munnar.",
+    "image": "/kerala2.jpg",
+    "price": 1800,
+    "location": "Munnar Hills",
+    "city": "Kerala",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Bonfire Area"]
+  },
+  {
+    "name": "Udaipur Royal Heritage Hotel",
+    "title": "Udaipur Royal Heritage Hotel",
+    "description": "Traditional palace-style stay with royal interiors.",
+    "image": "/udaipur2.jpg",
+    "price": 2400,
+    "location": "City Palace",
+    "city": "Udaipur",
+    "country": "India",
+    "rating": 4.9,
+    "amenities": ["WiFi","AC","Cafe"]
+  },
+  {
+    "name": "Jaipur Fort View Hotel",
+    "title": "Jaipur Fort View Hotel",
+    "description": "Hotel offering beautiful views of Amer Fort.",
+    "image": "/jaipur2.jpg",
+    "price": 1900,
+    "location": "Amer Fort",
+    "city": "Jaipur",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","AC"]
+  },
+
+  {
+    "name": "Bhopal Heritage Stay",
+    "title": "Bhopal Heritage Stay",
+    "description": "Comfortable heritage stay near the old city.",
+    "image": "/bhopal2.jpg",
+    "price": 1600,
+    "location": "Shamla Hills",
+    "city": "Bhopal",
+    "country": "India",
+    "rating": 4.6,
+    "amenities": ["WiFi","Cafe"]
+  },
+  {
+    "name": "Manali Riverside Cottage",
+    "title": "Manali Riverside Cottage",
+    "description": "Cozy cottage beside the Beas River.",
+    "image": "/manali2.jpg",
+    "price": 2200,
+    "location": "Beas River",
+    "city": "Manali",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Bonfire Area"]
+  },
+  {
+    "name": "Shimla Snow View Lodge",
+    "title": "Shimla Snow View Lodge",
+    "description": "Snow view lodge perfect for winter vacations.",
+    "image": "/shimla2.jpg",
+    "price": 2000,
+    "location": "Kufri",
+    "city": "Shimla",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","AC"]
+  },
+  {
+    "name": "Mumbai Sea Breeze Hotel",
+    "title": "Mumbai Sea Breeze Hotel",
+    "description": "Hotel with relaxing sea breeze and sunset views.",
+    "image": "/mumbai2.jpg",
+    "price": 3100,
+    "location": "Juhu Beach",
+    "city": "Mumbai",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","Pool"]
+  },
+  {
+    "name": "Lonavala Waterfall Resort",
+    "title": "Lonavala Waterfall Resort",
+    "description": "Nature resort near seasonal waterfalls.",
+    "image": "/lonavala2.jpg",
+    "price": 2100,
+    "location": "Tiger Point",
+    "city": "Lonavala",
+    "country": "India",
+    "rating": 4.6,
+    "amenities": ["WiFi","Pool"]
+  },
+  {
+    "name": "Goa Sunset Resort",
+    "title": "Goa Sunset Resort",
+    "description": "Beachfront resort perfect for sunset lovers.",
+    "image": "/goa3.jpg",
+    "price": 2400,
+    "location": "Anjuna Beach",
+    "city": "Goa",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Pool","Cafe"]
+  },
+  {
+    "name": "Kerala Lagoon Retreat",
+    "title": "Kerala Lagoon Retreat",
+    "description": "Peaceful resort surrounded by backwaters and coconut trees.",
+    "image": "/kerala3.jpg",
+    "price": 2100,
+    "location": "Kumarakom",
+    "city": "Kerala",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","AC","Pool"]
+  },
+  {
+    "name": "Jaipur Royal Palace Stay",
+    "title": "Jaipur Royal Palace Stay",
+    "description": "A heritage palace stay with traditional interiors.",
+    "image": "/jaipur3.jpg",
+    "price": 2700,
+    "location": "City Palace",
+    "city": "Jaipur",
+    "country": "India",
+    "rating": 4.9,
+    "amenities": ["WiFi","AC","Pool"]
+  },
+  {
+    "name": "Udaipur Lakefront Retreat",
+    "title": "Udaipur Lakefront Retreat",
+    "description": "Luxury hotel with breathtaking lake views.",
+    "image": "/udaipur3.jpg",
+    "price": 2800,
+    "location": "Fateh Sagar Lake",
+    "city": "Udaipur",
+    "country": "India",
+    "rating": 4.9,
+    "amenities": ["WiFi","Pool"]
+  },
+  {
+    "name": "Bhopal City Comfort Hotel",
+    "title": "Bhopal City Comfort Hotel",
+    "description": "Affordable stay in the center of Bhopal.",
+    "image": "/bhopal3.jpg",
+    "price": 1500,
+    "location": "MP Nagar",
+    "city": "Bhopal",
+    "country": "India",
+    "rating": 4.5,
+    "amenities": ["WiFi","AC"]
+  },
+  {
+    "name": "Manali Mountain Escape",
+    "title": "Manali Mountain Escape",
+    "description": "Scenic mountain retreat with cozy rooms.",
+    "image": "/manali3.jpg",
+    "price": 2400,
+    "location": "Solang Valley",
+    "city": "Manali",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Bonfire Area"]
+  },
+  {
+    "name": "Shimla Valley Resort",
+    "title": "Shimla Valley Resort",
+    "description": "Resort with amazing Himalayan valley views.",
+    "image": "/shimla3.jpg",
+    "price": 2200,
+    "location": "Kufri",
+    "city": "Shimla",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","AC"]
+  },
+  {
+    "name": "Mumbai Luxury Bay Hotel",
+    "title": "Mumbai Luxury Bay Hotel",
+    "description": "Luxury hotel overlooking the Arabian Sea.",
+    "image": "/mumbai3.jpg",
+    "price": 3500,
+    "location": "Colaba",
+    "city": "Mumbai",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Pool","Cafe"]
+  },
+  {
+    "name": "Lonavala Nature Retreat",
+    "title": "Lonavala Nature Retreat",
+    "description": "Relaxing resort surrounded by hills and waterfalls.",
+    "image": "/lonavala3.jpg",
+    "price": 2100,
+    "location": "Lion's Point",
+    "city": "Lonavala",
+    "country": "India",
+    "rating": 4.6,
+    "amenities": ["WiFi","Pool"]
+  },
+  {
+    "name": "Rishikesh Yoga Retreat",
+    "title": "Rishikesh Yoga Retreat",
+    "description": "Peaceful yoga retreat near the holy Ganges.",
+    "image": "/rishikesh2.jpg",
+    "price": 2000,
+    "location": "Tapovan",
+    "city": "Rishikesh",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Cafe"]
+  },
+  {
+    "name": "Nainital Hilltop Lodge",
+    "title": "Nainital Hilltop Lodge",
+    "description": "Lodge with breathtaking hilltop views.",
+    "image": "/nainital2.jpg",
+    "price": 2100,
+    "location": "Snow View Point",
+    "city": "Nainital",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","AC"]
+  },
+  {
+    "name": "Goa Palm Tree Resort",
+    "title": "Goa Palm Tree Resort",
+    "description": "Relax under palm trees near the beach.",
+    "image": "/goa4.jpg",
+    "price": 2300,
+    "location": "Candolim Beach",
+    "city": "Goa",
+    "country": "India",
+    "rating": 4.7,
+    "amenities": ["WiFi","Pool"]
+  },
+  {
+    "name": "Kerala Jungle Stay",
+    "title": "Kerala Jungle Stay",
+    "description": "Stay close to nature in this jungle resort.",
+    "image": "/kerala4.jpg",
+    "price": 2000,
+    "location": "Wayanad",
+    "city": "Kerala",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Bonfire Area"]
+  },
+  {
+    "name": "Jaipur Heritage Courtyard",
+    "title": "Jaipur Heritage Courtyard",
+    "description": "Traditional courtyard hotel with royal ambiance.",
+    "image": "/jaipur4.jpg",
+    "price": 2200,
+    "location": "Pink City",
+    "city": "Jaipur",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","AC"]
+  },
+  {
+    "name": "Udaipur Sunset Palace",
+    "title": "Udaipur Sunset Palace",
+    "description": "Beautiful palace hotel with sunset lake views.",
+    "image": "/udaipur4.jpg",
+    "price": 2900,
+    "location": "Lake Pichola",
+    "city": "Udaipur",
+    "country": "India",
+    "rating": 4.9,
+    "amenities": ["WiFi","Pool"]
+  },
+  {
+    "name": "Bhopal Lakefront Retreat",
+    "title": "Bhopal Lakefront Retreat",
+    "description": "Hotel overlooking Bhopal's Upper Lake.",
+    "image": "/bhopal4.jpg",
+    "price": 1700,
+    "location": "Upper Lake",
+    "city": "Bhopal",
+    "country": "India",
+    "rating": 4.6,
+    "amenities": ["WiFi","AC"]
+  },
+  {
+    "name": "Manali Pine Tree Lodge",
+    "title": "Manali Pine Tree Lodge",
+    "description": "Cozy lodge surrounded by pine forests.",
+    "image": "/manali4jpg.jpg",
+    "price": 2100,
+    "location": "Hadimba Temple",
+    "city": "Manali",
+    "country": "India",
+    "rating": 4.8,
+    "amenities": ["WiFi","Bonfire Area"]
   }
+  
+  
+ 
 ]
