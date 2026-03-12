@@ -1,11 +1,18 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { Search, MapPin, Calendar, Users } from 'lucide-react';
 import Footer from '../components/Footer';
 /* eslint-disable-next-line no-unused-vars */
+
 import { motion } from 'framer-motion';
 
 const Home = () => {
+       const navigate = useNavigate();
+const [location, setLocation] = useState("");
     return (
+     
+        
         <div className="bg-[#2a2119] min-h-screen text-white font-sans selection:bg-[#EF6C00] selection:text-white">
             {/* Hero Section */}
             <div className="relative pt-8 pb-16 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto">
@@ -44,35 +51,64 @@ const Home = () => {
                         </motion.p>
 
                         {/* Search Bar Plugin */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.4 }}
-                            className="bg-black/40 backdrop-blur-md border border-white/20 p-2 rounded-xl flex flex-col md:flex-row items-center gap-2 w-full max-w-4xl"
-                        >
-                            <div className="flex-1 flex items-center gap-3 px-4 py-3 w-full border-b md:border-b-0 md:border-r border-white/20">
-                                <MapPin className="text-[#EF6C00]" size={20} />
-                                <div className="flex flex-col text-left">
-                                    <input type="text" placeholder="Where to?" className="bg-transparent text-white placeholder-gray-400 outline-none text-sm w-full" />
-                                </div>
-                            </div>
-                            <div className="flex-1 flex items-center gap-3 px-4 py-3 w-full border-b md:border-b-0 md:border-r border-white/20">
-                                <Calendar className="text-[#EF6C00]" size={20} />
-                                <div className="flex flex-col text-left">
-                                    <input type="text" placeholder="Dates" className="bg-transparent text-white placeholder-gray-400 outline-none text-sm w-full" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'} />
-                                </div>
-                            </div>
-                            <div className="flex-1 flex items-center gap-3 px-4 py-3 w-full">
-                                <Users className="text-[#EF6C00]" size={20} />
-                                <div className="flex flex-col text-left">
-                                    <input type="text" placeholder="Guests" className="bg-transparent text-white placeholder-gray-400 outline-none text-sm w-full" />
-                                </div>
-                            </div>
-                            <button className="bg-[#EF6C00] hover:bg-[#E65100] text-white px-8 py-4 rounded-lg font-medium flex items-center justify-center gap-2 transition w-full md:w-auto h-full">
-                                <Search size={20} />
-                                Search
-                            </button>
-                        </motion.div>
+                       <motion.div
+initial={{ opacity: 0, y: 20 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{ delay: 0.4 }}
+className="bg-black/40 backdrop-blur-md border border-white/20 p-2 rounded-xl flex flex-col md:flex-row items-center gap-2 w-full max-w-4xl"
+>
+
+<div className="flex-1 flex items-center gap-3 px-4 py-3 w-full border-b md:border-b-0 md:border-r border-white/20">
+<MapPin className="text-[#EF6C00]" size={20} />
+<div className="flex flex-col text-left">
+<input
+  type="text"
+  placeholder="Where to?"
+  value={location}
+  onChange={(e) => setLocation(e.target.value)}
+  onKeyDown={(e) => {
+    if (e.key === "Enter") {
+      navigate(`/flats?city=${location}`);
+    }
+  }}
+  className="bg-transparent text-white placeholder-gray-400 outline-none text-sm w-full"
+/>
+</div>
+</div>
+
+<div className="flex-1 flex items-center gap-3 px-4 py-3 w-full border-b md:border-b-0 md:border-r border-white/20">
+<Calendar className="text-[#EF6C00]" size={20} />
+<div className="flex flex-col text-left">
+<input
+type="text"
+placeholder="Dates"
+className="bg-transparent text-white placeholder-gray-400 outline-none text-sm w-full"
+onFocus={(e)=>e.target.type='date'}
+onBlur={(e)=>e.target.type='text'}
+/>
+</div>
+</div>
+
+<div className="flex-1 flex items-center gap-3 px-4 py-3 w-full">
+<Users className="text-[#EF6C00]" size={20} />
+<div className="flex flex-col text-left">
+<input
+type="text"
+placeholder="Guests"
+className="bg-transparent text-white placeholder-gray-400 outline-none text-sm w-full"
+/>
+</div>
+</div>
+
+<button
+onClick={()=>navigate(`/flats?city=${location}`)}
+className="bg-[#EF6C00] hover:bg-[#E65100] text-white px-8 py-4 rounded-lg font-medium flex items-center justify-center gap-2 transition w-full md:w-auto h-full"
+>
+<Search size={20} />
+Search
+</button>
+
+</motion.div>
                     </div>
                 </motion.div>
             </div>

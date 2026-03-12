@@ -26,7 +26,7 @@ const About = () => {
                         transition={{ delay: 0.2 }}
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1596401057633-54a8fea8ce64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            src="/about.jpeg"
                             alt="Heritage"
                             className="rounded-2xl shadow-2xl object-cover h-[500px] w-full"
                         />

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo,useEffect  } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, Heart, Map, Grid, List, ChevronRight, MapPin } from 'lucide-react';
 /* eslint-disable-next-line no-unused-vars */
@@ -6,6 +6,10 @@ import { motion } from 'framer-motion';
 
 import hostelData from '../data/hostels.json';
 import Footer from '../components/Footer';
+import { useLocation } from "react-router-dom";
+
+
+
 
 const Flats = () => {
     // Basic States
@@ -13,6 +17,15 @@ const Flats = () => {
     const [selectedRegion, setSelectedRegion] = useState('All Locations');
     const [sortBy, setSortBy] = useState('popularity'); // popularity | priceAsc | priceDesc | ratingDesc
 
+    const location = useLocation();
+    const query = new URLSearchParams(location.search);
+    const city = query.get("city");
+
+    useEffect(() => {
+        if (city) {
+            setSelectedRegion(city);
+        }
+    }, [city]);
     // Multi-select amenity filters
     const [amenities, setAmenities] = useState({
         WiFi: false,
@@ -35,7 +48,9 @@ const Flats = () => {
 
         // 1. Filter by Region
         if (selectedRegion !== 'All Locations') {
-            result = result.filter(h => h.city === selectedRegion);
+            result = result.filter(
+  h => h.city.toLowerCase() === selectedRegion.toLowerCase()
+);
         }
 
         // 2. Filter by Price Limit
@@ -241,7 +256,7 @@ const Flats = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="p-5 flex flex-col justify-between h-[210px]">
+                                            <div className="p-5 flex flex-col justify-between">
                                                 <div>
                                                     <div className="flex justify-between items-start mb-2">
                                                         <h3 className="font-bold text-lg text-white group-hover:text-[#EF6C00] transition line-clamp-1 pr-2">
@@ -273,10 +288,10 @@ const Flats = () => {
                                                     </div>
                                                 </div>
 
-                                                <div className="flex justify-between items-end mt-auto pt-4 border-t border-white/5">
+                                                <div className="flex justify-between items-end mt-auto pt-2 border-t border-white/5">
                                                     <div>
                                                         <span className="text-gray-500 text-xs block mb-1">Price</span>
-                                                        <span className="text-[#EF6C00] text-xl font-bold">${flat.price.toLocaleString()}</span>
+                                                        <span className="text-[#EF6C00] text-xl font-bold">₹{flat.price.toLocaleString()}</span>
                                                         <span className="text-gray-500 text-xs ml-1">/ night</span>
                                                     </div>
                                                     <div className="bg-[#EF6C00] hover:bg-[#E65100] text-white p-2.5 rounded-lg transition-colors group-hover:scale-110 duration-300">

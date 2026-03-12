@@ -17,7 +17,7 @@ const Collections = () => {
             title: 'Heritage Palaces of Rajasthan',
             desc: 'Experience the grandeur of royalty. Live in historic fort-palaces with ornate carvings, sprawling courtyards, and world-class hospitality in the heart of the desert.',
             loc: 'Jaipur, Udaipur, Jodhpur',
-            img: '/images/jaipur.jpg',
+            img: '/jaipur.jpg',
             type: 'left'
         },
         {
@@ -26,7 +26,7 @@ const Collections = () => {
             title: 'Backwater Retreats of Kerala',
             desc: "Surrender to the slow pace of life in God's Own Country. Stay in luxury houseboats or boutique resorts nestled along serene emerald waterways and coconut groves.",
             loc: 'Alleppey, Kumarakom',
-            img: '/images/kerala.jpg',
+            img: '/kerala.jpg',
             type: 'right'
         },
         {
@@ -35,7 +35,7 @@ const Collections = () => {
             title: 'Modern Urban Escapes',
             desc: "Sleek design meets city convenience. Discover the finest contemporary hotels in India's bustling metropolises, offering rooftop infinity pools and avant-garde dining.",
             loc: 'Mumbai, Bangalore, Delhi',
-            img: '/images/udaipur.jpg',
+            img: '/udaipur1.jpg',
             type: 'left'
         },
         {
@@ -44,7 +44,7 @@ const Collections = () => {
             title: 'Luxury Beach Resorts',
             desc: 'Golden sands and turquoise waters. From private villas in Goa to secluded eco-resorts in the Andamans, find your perfect coastal sanctuary.',
             loc: 'Goa, Andaman, Gokarna',
-            img: '/images/goa.jpg',
+            img: '/goa.jpg',
             type: 'right'
         }
     ];

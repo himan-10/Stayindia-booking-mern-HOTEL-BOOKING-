@@ -171,7 +171,7 @@ const FlatDetails = () => {
                                 </p>
                             </div>
                             <div className="relative">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Host" className="w-16 h-16 rounded-full object-cover border-2 border-[#EF6C00]" />
+                                <img src="/my dp.jpg" alt="Host" className="w-16 h-16 rounded-full object-cover border-2 border-[#EF6C00]" />
                                 <div className="absolute -bottom-1 -right-1 bg-[#EF6C00] text-white p-1 rounded-full border-2 border-[#1f1812]">
                                     <Shield size={12} />
                                 </div>
